@@ -1,0 +1,555 @@
+@import url(normalize.css);
+
+*{
+    margin:  0;
+    padding: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+body {
+    background-color: #1d1d1b;
+    max-width: 2000px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    align-content: center;
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+}
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.botones {
+        margin: 5px;
+    }
+
+/* Estilos para el encabezado */
+header {
+    background-color: #1d1d1b;
+    border-radius: 10px; 
+    text-align: right;
+    padding: 2vh;
+   }
+   
+ 
+h1{
+    color: #f89e76; 
+    text-align: center;
+    font-size: 20vh;
+    padding: 0;
+    margin:0;
+}
+
+#logo {
+    display:flex ;
+    font-size: 5vh;
+    margin-bottom: 10px;
+}
+
+#icono1,
+#icono2,
+#icono3 {
+    display:inline-flex;
+    font-size: 2vh;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+/* Estilos para la navegación */
+nav {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin:auto;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 5px ; 
+}
+
+/* Estilo de los botones en el menú de navegación */
+
+
+.botones {
+    display: inline-block; /* Hace que los botones sean elementos en línea */
+    margin: 10px; 
+    text-decoration: none; 
+    color: #fff; 
+    padding: 2vh 8vh ; 
+    background-color: #d46f37; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.botones:hover {
+    background-color:#f89e76; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/* Estilos para el div con id "top" */
+
+ .top {
+    margin-bottom: auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-around;
+    background-color: #1d1d1b;
+    padding: 1vh;
+    text-align: center;  
+    color: white;
+    flex-wrap: wrap;
+  }
+
+  /* Estilos adicionales para los elementos top */
+#top1 {
+    float:none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:auto;
+    font-size: 20px;
+    
+}
+
+#top2 {
+    float:none;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 40px;
+    font-family: 'Major Mono Display', monospace;
+}
+
+#top3 {
+    float:none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+/* Estilos para la sección principal */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px; 
+ }
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #top p {
+        font-size: 16px;
+    }
+
+    #icono1, #icono2, #icono3 {
+        display: none;
+    }
+}
+
+/* Asegurarse de que los elementos se coloquen uno debajo del otro solo en dispositivos móviles */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+}
+/* Establecer el tamaño de los videos en función del dispositivo */
+#izq, #der {
+    flex: 1;
+     max-width: 100%; 
+    height: 80vh; 
+    }
+/* Ajustar el tamaño de los videos en pantallas más pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    #izq, #der {
+        height: 40vh; /* Aumenta la altura en dispositivos móviles */
+    }
+}
+
+/* Ajustar el tamaño de los videos en pantallas aún más pequeñas (pantallas muy pequeñas) */
+@media (max-width: 480px) {
+    #izq, #der {
+        height: 50vh; /* Aumenta la altura en pantallas muy pequeñas */
+    }
+}
+
+.visual-section {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.visual-section img {
+    max-width: 80%;
+    height: 50vh;
+    display: block; /* Para alinear correctamente */
+    margin: auto; /* Alineación automática */
+}
+
+/* Ajustar el tamaño de la imagen en pantallas más pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    .imagen-section img {
+        height: 40vh; /* Aumenta la altura en dispositivos móviles */
+    }
+}
+
+
+
+/* Ajustar el tamaño de la imagen en pantallas aún más pequeñas (pantallas muy pequeñas) */
+@media (max-width: 480px) {
+    img {
+        height: 50vh; /* Aumenta la altura en pantallas muy pequeñas */
+    }
+}  
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* SOBRE MI*/
+/* Estilo para el contenedor principal */
+
+.trayectoria {
+    width: 50%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-content: left;
+    text-align: justify; 
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh;
+}
+/* Estilo para el contenido izquierdo (h1 y p) */
+.espaciopersonalizado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%; 
+}
+.trayectoria p{
+    font-size: large;
+    margin-top: 1rem;
+}
+#titulo {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 10vh;
+    background-color: #468b97;
+    padding-right:50px;
+    padding-left:50px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#googlemaps{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 40px;
+    margin: auto;
+    padding-top: 60px;
+ }
+
+/* Estilo para la imagen (contenido derecho) */
+.perfil {
+   width: 35%;
+   margin:20px;
+}
+
+.perfil img {
+    max-width: 100%; /* Establece un ancho máximo del 50% de la altura de la ventana */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+/*CONTACTO*/
+/*Estilos para el form*/
+#fondo-contacto{
+    background-image: url(../img/galeria/22.webp); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+form.contact-form {
+    display: block;
+    justify-content: center ;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    padding: 3vh; /* Ajusta el espaciado a tu gusto */
+    border-radius: 10px; /* Ajusta el radio del borde a tu gusto */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.);
+    background: rgb(221, 216, 216); 
+}
+
+#contacto {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 10vh;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1vh;
+    margin-bottom: 3vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #468b97;
+    color: white;
+    padding: 1vh 1vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*GALERÍA*/
+/* Estilos para la galería */
+#titulo {
+    font-family: 'Major Mono Display', monospace;
+    display: block;
+    background-color: #468b97; 
+    margin: auto;
+    margin-bottom: 5vh;
+    font-size: 4vh;
+    z-index: 1;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+    padding: 0 5vw;
+    margin: 0 auto;
+}
+
+.galeria img {
+    width: 15%;
+    height: auto; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* Mantiene la proporción sin deformar la imagen */
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Contenedor principal de lightbox */
+#contenedor-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+#contenedor-interno {
+    width: 80vw;
+    height: 80vh;
+    border: 2px #f3f3f3 solid;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Estilo para botones */
+.button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+}
+
+#btn-cierra,
+#btn-retrocede,
+#btn-adelanta {
+    position: absolute;
+    font-size: 3vh;
+}
+
+#btn-cierra {
+    top: 2vh;
+    right: 2vh;
+}
+
+#btn-retrocede {
+    top: 50%;
+    left: 2vh;
+    transform: translateY(-50%);
+}
+
+#btn-adelanta {
+    top: 50%;
+    right: 2vh;
+    transform: translateY(-50%);
+}
+/*COMENTARIOS*/
+/* Estilo para Comentarios */
+#fondoComentarios {
+    background-image: url('../img/galeria/fondo comentarios.webp');
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center;
+    overflow: hidden; /* Oculta el contenido que se desborde de este contenedor */
+    position: relative; /* Importante para los efectos relativos a esta área */
+    padding: 10vh 0; /* Añade espaciado interior arriba y abajo */
+    text-align: center; /* Centra el texto y los elementos del formulario */
+    animation: moveBackground 90s linear infinite, changeColor 10s ease-in-out infinite; /* Animaciones */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%; /* Posición inicial */
+    }
+    100% {
+        background-position: 100% 100%; /* Posición final */
+    }
+}
+
+@keyframes changeColor {
+    0%, 100% {
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.9); /* Fondo negro más oscuro */
+    }
+}
+#tituloEspecial{
+    font-family:'Major Mono Display', monospace; 
+    font-size: 10vh;
+    color:#ecf6f8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y difuminado */
+}
+
+/* Animación para simular escritura letra por letra */
+@keyframes typingAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Estilo para el contenedor del título */
+#fondoComentarios h1 {
+    overflow: hidden; /* Oculta el contenido que desborde */
+    white-space: nowrap; /* Evita saltos de línea */
+    border-right: .15em solid white; /* Simula el cursor parpadeante */
+    animation: typingAnimation 3s steps(40) forwards; /* Animación de escritura */
+}
+
+
+#formularioComentario {
+    max-width: 50vw; /* Ajusta el ancho máximo del formulario */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 8vh;
+    border-radius: 2vh; /* Bordes redondeados */
+    box-shadow: 0 0 3vh rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    display: inline-block;
+}
+
+#formularioComentario label {
+    display: block;
+    margin-bottom: 3vh;
+    font-weight: bold; /* Hace que las etiquetas se destaquen más */
+}
+
+#formularioComentario textarea {
+    width: calc(50vw - 3vh); /* Toma el 90% del ancho menos el ancho del borde */
+    padding: 3vh;
+    margin-bottom: 6vh;
+    border: 1px solid #ccc;
+    border-radius: 2vh;
+    box-sizing: border-box; /* Incluye el ancho del borde y el relleno en el ancho total */
+}
+
+#formularioComentario textarea {
+    resize: vertical;
+    min-height: 20vh; /* Altura mínima del área de texto */
+}
+
+#formularioComentario button {
+    background-color: #468b97;
+    color: white;
+    padding: 3vh 6vh;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    font-weight: bold; /* Hace que el botón se destaque */
+    display: block; /* Para que el botón esté en una línea separada */
+    margin: 0 auto; /* Centra el botón */
+}
+
+/* Estilo para los comentarios obtenidos de la API */
+#comentarios {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.6;
+}
+
+#comentarios .comentario {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+

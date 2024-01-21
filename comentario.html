@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adriana Mas Arte">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logoadri.webp" width="100" height="100">
+        </div>
+        <h1>Adriana</h1>
+        <div id="icono1">       
+            <a href="https://www.instagram.com/adrianamasarte_/" target="_blank">
+                <img src="img/insta.png" alt="Enlace a Instagram" width="50" height="50">
+            </a>
+        </div>
+        <div id="icono2">
+            <a href="https://www.instagram.com/adrianamasarte_/" target="_blank">
+                <img src="img/face.png" alt="Enlace a facebook" width="48" height="48">
+            </a>
+        </div>
+        <div id="icono3">
+            <a href="https://www.instagram.com/adrianamasarte_/" target="_blank">
+                <img src="img/wsp.png" alt="Enlace a Whatsapp" width="48" height="48">
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a class="botones" href="index.html">Home</a>
+        <a class="botones" href="sobre mi.html">Sobre mi</a>
+        <a class="botones" href="productos.html">Productos</a>
+        <a class="botones" href="contacto.html">Contacto</a>
+        <a class="botones"> Dejanos tu comentario</a>
+     </nav>
+     <div id="fondoComentarios">
+        <h1 id="tituloEspecial">Dejanos tu comentario</h1>
+    <form id="formularioComentario">
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+    
+    <div id="comentarios">
+        <!-- Aquí se mostrarán los comentarios obtenidos de la API -->
+    </div>
+    
+    <div class="comentario" id="comment-template" style="display: none;">
+        <h3></h3>
+        <p></p>
+    </div>
+    <script src="js/comentarios.js"></script>
+    </body>
+ 
+</html>
